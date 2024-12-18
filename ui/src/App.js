@@ -1,37 +1,31 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
 import './App.css';
 
-function Main() {
+function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="corner top-left">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <div className="corner top-right">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <div className="corner bottom-left">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <div className="corner bottom-right">
-          <img src={logo} className="App-logo" alt="logo" />
-        </div>
-        <h1>Welcome to My Personal Webpage!</h1>
-        <p>
-          I'm glad you're here. Feel free to explore and learn more about me.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="App">
+        <Header />
+        <nav>
+          <Link to="/">Home</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
-export default Main;
+export default App;
