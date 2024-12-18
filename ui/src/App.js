@@ -1,13 +1,25 @@
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function Main() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div className="corner top-left">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="corner top-right">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="corner bottom-left">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <div className="corner bottom-right">
+          <img src={logo} className="App-logo" alt="logo" />
+        </div>
+        <h1>Welcome to My Personal Webpage!</h1>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I'm glad you're here. Feel free to explore and learn more about me.
         </p>
         <a
           className="App-link"
@@ -22,4 +34,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
