@@ -4,7 +4,7 @@ function About() {
   return (
     <div>
       <h1>About Me</h1>
-      <p>Here’s a little bit about myself.</p>
+      <p>Hello! I'm Daniel Fisher, a junior Software Engineering major at Franciscan University of Steubenville.</p>
     </div>
   );
 }
