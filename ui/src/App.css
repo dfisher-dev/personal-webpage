@@ -110,3 +110,32 @@ nav a {
 nav a:hover {
   color: #21a1f1;
 }
+
+/* Existing styles remain unchanged */
+
+/* Navigation item with arrow */
+.nav-item {
+  position: relative;
+  display: inline-block;
+}
+
+/* Bouncing arrow styles */
+.bounce-arrow {
+  position: absolute;
+  top: -30px; /* Adjust position above the link */
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #61dafb;
+  animation: bounce 1s infinite;
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+  0%, 100% {
+    transform: translate(-50%, 0);
+  }
+  50% {
+    transform: translate(-50%, -10px);
+  }
+}

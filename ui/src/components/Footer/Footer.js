@@ -4,7 +4,7 @@ import './Footer.css';
 function Footer() {
   return (
     <footer className="footer">
-      <p>© Daniel Fisher. All rights reserved.</p>
+      <p>© Daniel Fisher. All rights reserved. Background image courtesy of Eberhard Grossgasteiger.</p>
     </footer>
   );
 }
